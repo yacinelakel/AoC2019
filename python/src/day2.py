@@ -1,5 +1,5 @@
 def solve():
-    f = open("input/day2.txt");
+    f = open("inputs/day2.txt")
     program = [int(i) for i in f.readline().split(",")]
     f.close()
     print("Part 1: ", solve_part_one(program))
@@ -20,18 +20,18 @@ def solve_part_one(program):
     fixed_program[2] = 2
     return run_program(fixed_program)[0]
 
-def run_program(program, input):
+def run_program(program):
     result = program[:]
-    pos = 0;
-    opcode = result[pos];
+    pos = 0
+    opcode = result[pos]
     while opcode != 99:
         if opcode == 1:
             result[result[pos+3]] = result[result[pos+1]] + result[result[pos+2]]
         elif opcode == 2:
             result[result[pos+3]] = result[result[pos+1]] * result[result[pos+2]]
-        pos = pos + 4;
-        opcode = result[pos];
-    return result;
+        pos = pos + 4
+        opcode = result[pos]
+    return result
 
 solve()
          

@@ -3,7 +3,7 @@ import math
 
 
 def solve():
-    f = open("input/day1.txt", "r")
+    f = open("inputs/day1.txt", "r")
 
     ans1 = 0
     ans2 = 0
@@ -26,7 +26,7 @@ def calc_fuel_fuel(n):
     total = f
     while f > 0:
         f = max(0, calc_fuel(f))
-        total += f;
+        total += f
     return total
 
 solve()

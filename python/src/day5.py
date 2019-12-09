@@ -6,7 +6,7 @@ def solve():
     print('Part 2: ', solve_part_two(program[:]))
 
 def get_program():
-    f = open("input/day5.txt")
+    f = open("inputs/day5.txt")
     program = [int(i) for i in f.readline().split(",")]
     f.close()
     return program

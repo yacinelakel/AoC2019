@@ -1,9 +1,9 @@
 import functools
 
 def solve():
- f = open("input/day3.txt");
- lines = f.readlines();
- f.close();
+ f = open("inputs/day3.txt")
+ lines = f.readlines()
+ f.close()
 
  path_a = parse_line_to_points(lines[0])
  path_b = parse_line_to_points(lines[1])
